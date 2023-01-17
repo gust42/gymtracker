@@ -1,1 +1,16 @@
-{"name":"gust.gymtracker","version":"0.0.5","displayName":"GymTracker","cordova":{"platforms":["android"]},"dependencies":{"cordova-android":"~7.1.3"}}
+{
+  "name": "gust.gymtracker",
+  "version": "0.0.5",
+  "displayName": "GymTracker",
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cordova-android": "^11.0.0",
+    "cordova-browser": "^6.0.0"
+  }
+}
