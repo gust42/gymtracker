@@ -1,0 +1,15 @@
+<div id="custom-exercises" class="popup">
+  <h3>Välj övningar för pass</h3>
+  <div class="list-group">
+
+    <% for( var exerciseName in this) { %>
+      <a id="<%= makeId(exerciseName) %>" class="list-group-item">
+        <%= exerciseName %> <%= this[exerciseName].set %> &times; <%= this[exerciseName].rep %>
+      </a>
+    <% } %>
+  </div>
+  <div class="popup-buttons btn-group btn-group-justified">
+    <a id="popup-cancel" href="#" class="btn btn-primary">Avbryt</a>
+    <a id="popup-train" href="#" class="btn btn-primary">Träna</a>
+  </div>
+</div>

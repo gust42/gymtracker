@@ -1,0 +1,55 @@
+<div class="editexercise">
+<h4>Ny övning</h4>
+<div class="form-horizontal">
+
+  <div class="form-group">
+      <label for="inputEmail3" class="col-sm-2 control-label">Namn på övning</label>
+
+      <div class="col-sm-10">
+          <input type="text" class="form-control" id="e-name">
+      </div>
+  </div>
+  <div id="name-error" class="error-message alert alert-danger hidden">
+
+  </div>
+  <div class="form-group">
+      <div class="col-xs-6">
+        Set
+        <div class="input-group input-group-sm">
+          <div class="input-group-addon change-set" data-val="-1">
+            <div class="glyphicon glyphicon-minus"></div>
+          </div>
+          <input class="form-control exercise-set" value="3" />
+          <div class="input-group-addon change-set" data-val="1">
+              <div class="glyphicon glyphicon-plus"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        Reps
+        <div class="input-group input-group-sm">
+          <div class="input-group-addon change-reps" data-val="-1">
+            <div class="glyphicon glyphicon-minus"></div>
+          </div>
+          <input class="form-control exercise-rep" value="8" />
+          <div class="input-group-addon change-reps" data-val="1">
+              <div class="glyphicon glyphicon-plus"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div id="setrep-error" class="error-message alert alert-danger hidden">
+
+  </div>
+
+  <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+          <button type="button" id="save-exercise" data-func="saveExercise" class="btn btn-primary btn-block">
+            Spara övning
+          </button>
+      </div>
+  </div>
+
+</div>
+</div>

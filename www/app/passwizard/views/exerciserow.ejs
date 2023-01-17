@@ -1,0 +1,31 @@
+<div data-id="<%= makeId(this.name) %>" class="exercise-row list-group-item">
+	<h4 class="list-group-item-heading">
+			<%= this.name %>
+	</h4>
+	<div class="row">
+		<div class="col-xs-6">
+			Set
+			<div class="input-group input-group-sm">
+				<div class="input-group-addon change-set" data-val="-1">
+					<div class="glyphicon glyphicon-minus"></div>
+				</div>
+				<input class="form-control exercise-set" value="<%= this.set %>" />
+				<div class="input-group-addon change-set" data-val="1">
+						<div class="glyphicon glyphicon-plus"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			Reps
+			<div class="input-group input-group-sm">
+				<div class="input-group-addon change-reps" data-val="-1">
+					<div class="glyphicon glyphicon-minus"></div>
+				</div>
+				<input class="form-control exercise-rep" value="<%= this.rep %>" />
+				<div class="input-group-addon change-reps" data-val="1">
+						<div class="glyphicon glyphicon-plus"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

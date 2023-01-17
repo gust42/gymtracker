@@ -1,0 +1,30 @@
+<h3>Välj övningar på pass</h3>
+<p>
+  Välj en befintlig övning att lägga till passet
+</p>
+<div class="form-group">
+  <div class="row">
+
+    <div class="col-xs-8">
+
+      <select class="form-control" id="list-of-exercises"></select>
+    </div>
+    <div class="col-xs-4">
+      <button id="new-exercise" data-func="addExercise" class="btn btn-primary btn-block">Lägg till</button>
+    </div>
+
+    </div>
+</div>
+<div class="form-group">
+  <p>
+    eller skapa en ny
+  </p>
+  <button id="create-exercise" data-func="createExercise" class="btn btn-primary btn-block">Skapa ny övning</button>
+</div>
+<h3>Övningar på pass
+
+</h3>
+<div id="exercise-list" class="form-group list-group">
+  Inga övningar tillagda
+</div>
+<div class="error-message alert alert-danger hidden"></div>

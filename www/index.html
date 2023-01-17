@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="sv">
+<head>
+  <title>GymTracker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#31708f">
+  <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<div id="loading">
+  <div class="sk-folding-cube">
+    <div class="sk-cube1 sk-cube"></div>
+    <div class="sk-cube2 sk-cube"></div>
+    <div class="sk-cube4 sk-cube"></div>
+    <div class="sk-cube3 sk-cube"></div>
+  </div>
+  <div>
+    Laddar..
+  </div>
+</div>
+<div id="panel">
+  <nav class="navbar navbar-default navbar-fixed-top hidden">
+    <div class="container-fluid">
+      <div  id="slide-menu" class="pull-left">
+
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </div>
+      <ul class="nav navbar-nav pull-left" id="main-menu" role="tablist">
+        <li><a id="passlist" class="page-link" href="#">Träna</a></li>
+        <li><a id="stats" class="page-link" href="#">Statistik</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+  	<div id="content"></div>
+  </div>
+</div>
+  <nav id="menu" style="display:none">
+    <header class="text-center">
+      <h2>GymTracker</h2>
+    </header>
+    <h3>Hantera pass/övningar</h3>
+    <ul class="list-group">
+          <li class="list-group-item"><a id="passwizard" class="page-link" href="#">Skapa pass</a></li>
+          <li class="list-group-item"><a id="editpass" class="page-link" href="#">Ändra/Ta bort pass</a></li>
+          <li class="list-group-item"><a id="editexercise" class="page-link" href="#">Skapa övning</a></li>
+    </ul>
+    <ul class="list-group">
+
+      <li class="list-group-item"><a id="settings" class="page-link" href="#">Inställningar</a></li>
+    </ul>
+  </nav>
+
+  <script src="cordova.js"></script>
+  <script src="libs/moment.min.js"></script>
+  <script src="libs/locale/sv.js"></script>
+  <script src="libs/jquery-2.1.1.min.js"></script>
+  <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  <script src="libs/bootstrap-datepicker.js"></script>
+  <script src="libs/slideout.js"></script>
+  <script src="libs/require.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>

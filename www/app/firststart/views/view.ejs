@@ -1,0 +1,30 @@
+<div class="first-visit">
+  <h1>Välkommen till GymTracker</h1>
+  <p>Första gången du startar måste du ange ett användarnamn</p>
+  <div class="form-group">
+      <input placeholder="Användarnamn" class="form-control" type="text" id="user-name" />
+      <button data-func="saveUserName" class="btn btn-block btn-primary" id="user-save">Börja använda appen</button>
+  </div>
+  <p>
+     Klicka nedan för att synkronisera med ett existerande molnnamn
+  </p>
+  <button data-func="showCloud" class="btn btn-default">
+    Ange molnnamn
+  </button>
+</div>
+
+
+
+<div class="cloud hidden">
+  <h3>Har du redan ett användarnamn så ange ditt molnnamn nedan</h3>
+  <div class="form-group">
+      <input class="form-control" type="text" id="cloud-name" placeholder="Molnnamn" />
+      <button data-func="activateCloud" class="btn btn-block btn-primary" id="cloud-save">Anslut</button>
+  </div>
+  <div class="alert alert-danger hidden">
+    Det finns inget moln med det namnet
+  </div>
+  <button data-func="showCloud" class="btn btn-default">
+    Avbryt
+  </button>
+</div>

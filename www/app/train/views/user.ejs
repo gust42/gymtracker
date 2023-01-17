@@ -1,0 +1,59 @@
+<div data-user="<%= this.user.name %>" class="col-xs-12 top">
+
+    <div class="form-horizontal margin-top">
+      <div class="form-group">
+          <label class="col-xs-3 control-label">Vikt</label>
+          <div class="col-xs-9">
+              <div class="input-group">
+                  <input class="form-control exercise-weight" type="text"/>
+          				<span class="input-group-btn">
+          					<div class="btn fail-button">
+                      <span class="glyphicon"></span>
+                    </div>
+  				        </span>
+              </div>
+          </div>
+          <div class="col-xs-12">
+              <div class="quick-add btn btn-default col-xs-4" data-val="-0.5">-0.5</div>
+              <div class="quick-add btn btn-default col-xs-4" data-val="-1">-1</div>
+              <div class="quick-add btn btn-default col-xs-4" data-val="-2.5">-2.5</div>
+              <div class="quick-add btn btn-default col-xs-4" data-val="1">+1</div>
+              <div class="quick-add btn btn-default col-xs-4" data-val="2.5">+2.5</div>
+              <div class="quick-add btn btn-default col-xs-4" data-val="5">+5</div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="form-horizontal margin-top">
+      <div class="form-group">
+
+        <label class="col-xs-3 control-label">Reps</label>
+        <div class="col-xs-9">
+          <div class="input-group">
+            <div class="input-group-addon change-reps" data-val="-1">
+              <div class="glyphicon glyphicon-minus"></div>
+            </div>
+            <input type="text" class="form-control" id="number-of-refs"  value="<%= this.exercise.rep %>"  />
+            <div class="input-group-addon change-reps" data-val="1">
+                <div class="glyphicon glyphicon-plus"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="set-done" class="btn btn-primary btn-block margin-top">
+      <span class="glyphicon glyphicon-ok"></span>
+      Klar med set <%=this.currentSet %>
+    </div>
+    <!-- <div id="exercise-done" class="btn btn-primary btn-block">
+      <span class="glyphicon glyphicon-ok"></span>
+      Fyll i alla set
+    </div> -->
+    <h4>Historik</h4>
+    <div class="row">
+        <div class="col-sm-12 history">
+        </div>
+    </div>
+</div>

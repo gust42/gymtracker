@@ -1,0 +1,16 @@
+<div class="history-box pull-left">
+  <% for(var k = 0; k < this.length; k++) { %>
+    <% if(this[k]) { %>
+      <%= moment(this[k].date).format("MM/DD") %>
+    <% break; } %>
+  <% } %>
+  <% for(var k = 0; k < this.length; k++) { %>
+    <% if(this[k]) { %>
+      <div class="history-item <%= this[k].fail ? 'bg-danger' : 'bg-success' %>">
+
+          <%= (k+1) +": "+(this[k].reps ? this[k].reps +"&times;" : "")+this[k].weight %> kg
+
+      </div>
+    <% } %>
+  <% } %>
+</div>
